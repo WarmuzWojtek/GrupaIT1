@@ -41,6 +41,8 @@ h1 {
   cursor: pointer;
   transform: scale(1);
   transition: all 0.3s;
+  margin: 0 16px;
+  width: 200px;
 }
 
 .btn:hover {
@@ -89,6 +91,54 @@ h1 {
   border-bottom: 2px solid white;
 }
 
+.modal {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 16px;
+  box-shadow: 5px 5px 15px 1px black;
+  text-align: center;
+  z-index: 2;
+  flex-wrap: wrap;
+}
+table {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+thead,
+tbody {
+  width: 100%;
+}
+
+tr {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+th {
+  width: 50%;
+  margin: 16px;
+}
+
+.likeOverlay {
+  filter: blur(20px);
+}
+
+.btn-close {
+  color: white;
+  background-color: blue;
+  margin: 24px;
+}
+
 @media (min-width: 768px) {
   .container {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1441' height='1100' preserveAspectRatio='none' viewBox='0 0 1441 1100'%3e%3cg mask='url(%26quot%3b%23SvgjsMask2454%26quot%3b)' fill='none'%3e%3crect width='1441' height='1100' x='0' y='0' fill='url(%23SvgjsLinearGradient2455)'%3e%3c/rect%3e%3cpath d='M1091.8418428371745 84.50412286625618L940.8569145162103 356.88814388350835 1213.2409355334626 507.8730722044725 1364.2258638544267 235.48905118722035z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M-105.99 647.03 a209.75 209.75 0 1 0 419.5 0 a209.75 209.75 0 1 0 -419.5 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M453.8510581222658 726.0288605184969L696.3778524854602 814.5632380048747 661.0719923916191 591.6508103604808z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M69.90816320756178 431.011679907787L219.28252640194123 596.9087170661061 385.17956356026025 447.5343538717266 235.8052003658808 281.6373167134076z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1137 315.28 a189.56 189.56 0 1 0 379.12 0 a189.56 189.56 0 1 0 -379.12 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask2454'%3e%3crect width='1441' height='1100' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='5.92%25' y1='-7.75%25' x2='94.08%25' y2='107.75%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2455'%3e%3cstop stop-color='rgba(76%2c 32%2c 216%2c 1)' offset='0.2'%3e%3c/stop%3e%3cstop stop-color='rgba(158%2c 0%2c 141%2c 1)' offset='0.98'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
@@ -107,5 +157,11 @@ h1 {
   .tableContainer > div {
     width: auto;
     margin: 48px;
+  }
+  .modal {
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
   }
 }
