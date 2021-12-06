@@ -5,5 +5,7 @@ losowych liczb całkowitych z zakresu od 1 do 100 i umieści je w dwóch kolumna
 kolumnie mają znaleźć się tylko liczby parzyste, a w drugiej nieparzyste. Dodatkowo obie kolumny
 muszą być posortowane rosnąco.
 
+Dodatkowo dodano wyświetlanie statystyk losowań.
+
 Live demo:
 https://warmuzwojtek.github.io/GrupaIT1/
