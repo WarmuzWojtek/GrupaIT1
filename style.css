@@ -159,9 +159,9 @@ th {
     margin: 48px;
   }
   .modal {
-    top: 50vh;
+    top: 10vh;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     width: 50%;
   }
 }
